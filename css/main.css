@@ -1,0 +1,146 @@
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay-ExtraBold.ttf") format("truetype");
+  font-weight: extraBold;
+}
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay-Medium.ttf") format("truetype");
+  font-weight: medium;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../images/pattern-background-desktop.svg");
+  background-repeat: repeat-x;
+  background-color: hsl(225, 100%, 94%);
+}
+
+img#illustration-hero {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+body {
+  font-family: "Red Hat Display";
+}
+
+.text {
+  margin: 20px 40px;
+  font-weight: medium;
+}
+
+.plan-price {
+  font-weight: medium;
+}
+
+.plan-name, .main-title {
+  color: hsl(223, 47%, 23%);
+}
+
+.plan-price, .text, .cancel-btn {
+  color: hsl(224, 23%, 55%);
+}
+
+.main-title {
+  font-weight: extra-bold;
+}
+
+.plan-name, button, .change-button {
+  font-weight: bold;
+}
+
+.change-button {
+  font-size: 0.8em;
+  color: hsl(245, 75%, 52%);
+}
+.change-button:hover {
+  color: #766CF1;
+  text-decoration: none;
+}
+
+.outer-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.content-container {
+  background-color: white;
+  text-align: center;
+  padding-top: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.plan-selector {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  display: flex;
+  width: 85%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.plan-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plan-name-price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 15px;
+}
+
+.plan-name {
+  margin: 2px;
+}
+
+.plan-price {
+  margin: 2px;
+}
+
+button {
+  display: block;
+  margin: 30px auto 10px;
+  padding: 10px 110px;
+  border-radius: 10px;
+  border: none;
+}
+button:last-of-type {
+  margin-top: 10px;
+}
+
+.payment-btn {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  box-shadow: 0 2px 8px hsl(245, 75%, 52%);
+}
+.payment-btn:hover {
+  background-color: #766CF1;
+}
+
+.cancel-btn {
+  padding: 10px 130px;
+  background-color: white;
+}
+.cancel-btn:hover {
+  color: hsl(223, 47%, 23%);
+}
